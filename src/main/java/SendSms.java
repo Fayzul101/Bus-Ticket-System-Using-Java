@@ -1,4 +1,3 @@
-
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.rest.lookups.v1.PhoneNumber;
@@ -19,8 +18,8 @@ public class SendSms {
 	    SendSms(String m){
 	    	Twilio.init(ACCOUNT_SID,AUTH_TOKEN);
 	    	Message message = Message.creator(
-	    			new com.twilio.type.PhoneNumber("+8801975623344"),
-	    			new com.twilio.type.PhoneNumber("+19034742442"),
+	    			new com.twilio.type.PhoneNumber("+88019********"),
+	    			new com.twilio.type.PhoneNumber("+190347*****"),
 	    			m
 	    			).create();
 	    			
